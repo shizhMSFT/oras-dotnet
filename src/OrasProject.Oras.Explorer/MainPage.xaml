@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OrasProject.Oras.Explorer.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+            <Entry Placeholder="Enter reference" x:Name="referenceEntry" Completed="referenceEntry_Completed" />
+            <Picker Title="Select a repository" x:Name="repositoryPicker" SelectedIndexChanged="repositoryPicker_SelectedIndexChanged" />
+            <Picker Title="Select a tag" x:Name="tagPicker" SelectedIndexChanged="tagPicker_SelectedIndexChanged"/>
+            <Label Text="Manifest will appear here" x:Name="outputLabel"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
