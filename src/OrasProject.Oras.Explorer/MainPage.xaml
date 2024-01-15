@@ -5,10 +5,10 @@
 
     <ScrollView>
         <VerticalStackLayout Padding="30,0" Spacing="25">
-            <Entry Placeholder="Enter reference" x:Name="referenceEntry" Completed="referenceEntry_Completed" />
+            <Entry Placeholder="Enter reference" IsSpellCheckEnabled="False" x:Name="referenceEntry" Completed="referenceEntry_Completed" />
             <Picker Title="Select a repository" x:Name="repositoryPicker" SelectedIndexChanged="repositoryPicker_SelectedIndexChanged" />
             <Picker Title="Select a tag" x:Name="tagPicker" SelectedIndexChanged="tagPicker_SelectedIndexChanged"/>
-            <Label Text="Manifest will appear here" x:Name="outputLabel"/>
+            <Editor Placeholder="Manifest will appear here" IsReadOnly="True" AutoSize="TextChanges" x:Name="outputBox"/>
         </VerticalStackLayout>
     </ScrollView>
 

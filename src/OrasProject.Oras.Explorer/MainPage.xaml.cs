@@ -38,7 +38,7 @@ namespace OrasProject.Oras.Explorer
 
         private async void tagPicker_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var output = (Label)this.FindByName("outputLabel");
+            var output = (Editor)this.FindByName("outputBox");
             byte[] content;
             var picker = (Picker)sender;
             var manifest = await _repository.FetchAsync((string)picker.SelectedItem);
